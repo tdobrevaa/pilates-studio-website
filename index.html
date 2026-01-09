@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.jpg">
 </head>
 
@@ -24,6 +23,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="classes.html">Classes</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
@@ -44,21 +44,110 @@
 
     <!-- About Section -->
     <section class="about">
-        <div class="container">
-            <h2 class="hero-heading text-xl">About LUMA Pilates</h2>
-            <p class="hero-text">At LUMA, we offer Pilates classes for all levels - from beginners to advanced
-                practitioners.
-                Our focus is on proper technique, breathing and body awareness to help you feel stronger and more
-                balanced.
-            </p>
+        <div class="container about-content">
+            <img src="images/women.jpg" class="photo" alt="pilates">
+            <div>
+                <h2 class="about-heading text-xl">About LUMA Pilates</h2>
+                <p class="about-text">
+                    At LUMA, we offer Pilates classes for all levels - from beginners to advanced practitioners.
+                    Our focus is on proper technique, breathing and body awareness to help you feel stronger and more
+                    balanced.
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- Classes Section -->
+    <section class="classes">
+        <div class="container">
+            <h2 class="text-xl text-center">Our Classes</h2>
 
+            <div class="classes-grid">
+                <article class="class-card">
+                    <a href="classes.html"><img src="images/mat.jpg" class="img" alt="mat pilates"></a>
+                    <h3 class="text-md">Mat Pilates</h3>
+                    <p>
+                        A floor-based pilates class focused on core strength,
+                        flexibility and controlled movement.
+                    </p>
+                </article>
+
+                <article class="class-card">
+                    <a href="classes.html"><img src="images/reformer.jpg" class="img" alt="reformer pilates"></a>
+                    <h3 class="text-md">Reformer Pilates</h3>
+                    <p>
+                        A dynamic class using reformer machines to improve
+                        strength, balance and posture.
+                    </p>
+                </article>
+
+                <article class="class-card">
+                    <a href="classes.html"><img src="images/stretching.jpg" class="img" alt="mat pilates"></a>
+                    <h3 class="text-md">Stretch & Relax</h3>
+                    <p>
+                        A gentle class designed to release tension,
+                        improve mobility and promote relaxation.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="why">
+        <div class="container">
+            <h2 class="text-xl text-center">Why Choose LUMA</h2>
+
+            <div class="why-grid">
+                <div class="why-item">Small group classes</div>
+                <div class="why-item">Certified instructors</div>
+                <div class="why-item">Calm atmosphere</div>
+                <div class="why-item">All levels welcome</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container text-center">
+            <h2 class="text-xl">Ready to start your pilates journey?</h2>
+            <a href="classes.html" class="btn">View Classes</a>
+        </div>
+    </section>
 
     <script src="js/main.js"></script>
-</body>
 
-<footer></footer>
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <h3>LUMA Pilates</h3>
+                <p>
+                    A calm and modern pilates studio focused on mindful movement,
+                    balance and well-being.
+                </p>
+            </div>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <p>Email: info@lumapilates.com</p>
+                <p>Phone: +359 88 123 4567</p>
+                <p>Location: Sofia, Bulgaria</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LUMA Pilates Studio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 
 </html>

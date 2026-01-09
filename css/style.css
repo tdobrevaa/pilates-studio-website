@@ -7,24 +7,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    background: #FDFBD4;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
+    line-height: 1.6;
+    background: #e2dece;
+    color: #333;
 }
 
 a {
     text-decoration: none;
     color: #333;
-    text-align: right;
 }
 
 ul {
     list-style: none;
-
 }
 
 img {
@@ -32,8 +26,41 @@ img {
     display: block;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navigation bar */
 .navbar {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
 }
 
@@ -43,29 +70,35 @@ img {
     align-items: center;
 }
 
-.navbar .main-menu ul {
+.main-menu ul {
     display: flex;
+    gap: 20px;
 }
 
-.navbar ul li a {
+.main-menu a {
     padding: 10px 20px;
-    display: block;
     font-weight: 600;
     transition: 0.3s;
 }
 
-.navbar ul li a:hover {
-    color: #acab86
+.main-menu a:hover {
+    color: #73795D;
 }
 
-/* Hero */
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Hero section */
 .hero {
     height: 550px;
     background: url('../images/pilates.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: white;
+    position: relative;
 }
 
 .hero::before {
@@ -75,63 +108,257 @@ img {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.hero {
-    position: relative;
-}
-
 .hero .container {
     position: relative;
+    /* max-width: 600px; */
 }
 
-/* Utility Classes */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
+/* About section */
+.about {
+    padding: 80px 0;
 }
 
-.container-sm {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 15px;
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
-/* Text Classes */
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    margin: 40px 0 20px;
+.about img {
+    width: 500px;
+    border-radius: 80px;
 }
 
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
+/* Classes section */
+.classes {
+    padding: 80px 0;
+    background-color: white;
 }
 
-.text-l {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 20px 0 10px;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
-
-.text-center {
+.class-card {
+    background: #e2dece;
+    padding: 30px;
+    border-radius: 40px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.class-card .img {
+    border-radius: 40px;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Why section */
+.why {
+    padding: 80px 0;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Call to action */
+.cta {
+    padding: 60px 0;
+    background: #73795D;
+    color: white;
+}
+
+/* Instructors */
+.instructor-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.instructor-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.instructor-role {
+    color: #73795D;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background: white;
+    padding: 60px 0 20px;
+    margin-top: 80px;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-nav a:hover {
+    color: #73795D;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 450px;
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .classes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 40px 0;
+    }
+
+    .photo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .classes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-card {
+        padding: 25px;
+    }
+
+    .instructor-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instructor-row img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        padding: 40px 20px;
+    }
+
+    .footer {
+        padding: 40px 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .instructor-row img {
+        width: 140px;
+        height: 140px;
+    }
 }
