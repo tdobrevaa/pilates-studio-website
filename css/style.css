@@ -115,7 +115,7 @@ p {
 /* Hero section */
 .hero {
     height: 550px;
-    background: url('../images/pilates.jpg') no-repeat center;
+    background: url('../images/pilates.webp') no-repeat center;
     background-size: cover;
     display: flex;
     align-items: center;
